@@ -1,0 +1,61 @@
+{
+  "categories": [
+    {
+      "_id": 1,
+      "name": "Zydeco",
+      "display_name": "Cajun Bluegrass",
+      "description": "Louisiana country cajun bean-snapping music"
+    },
+    {
+      "_id": 2,
+      "name": "Christian Hard Rock",
+      "display_name": "Inspiring Alt-Hard Rock",
+      "description": "Grammy award winning alt-rock bands, stadium ready anthems."
+
+    },
+    {
+      "_id": 3,
+      "name": "R&B",
+      "display_name": "Old Soul Radio",
+      "description": "R&B and Old Southern Soul"
+    },
+    {
+      "_id": 4,
+      "name": "Pandora",
+      "display_name": "Pandora Christafari",
+      "description": "Christian rastafarian/Caribbean music"
+
+    }
+  ],
+  "products": [
+    {
+      "_id": 1,
+      "category_id": 4,
+      "name": "Avion Blackman",
+      "display_name": "Avion Blackman",
+      "description": "Christian rastafarian/Caribbean singer"      
+    },
+    {
+      "_id": 2,
+      "category_id": 3,
+      "name": "Ottis Redding",
+      "display_name": "Old Soul Radio",
+      "description": "One of the most influential soul singers of the 1960s."
+    },
+    { 
+      "_id": 3,
+      "category_id": 2,
+      "name": "Imagine Dragons",
+      "display_name": "Inspiring Alt-Hard Rock",
+      "description": "Grammy award winning alt-rock band with stadium ready anthems."
+     
+    },
+    {
+      "_id": 4, 
+      "category_id": 1,
+      "name": "Rosie Ledet",
+      "display_name": "Cajun Bluegrass",
+      "description": "Louisiana country cajun bean-snapping music"
+    }
+  ]
+}
