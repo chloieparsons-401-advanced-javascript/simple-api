@@ -7,7 +7,7 @@
   },
   "servers": [
     {
-      "url": "http://localhost:8080/"
+      "url": "http://localhost:3000/"
     }
   ],
   "paths": {
@@ -20,7 +20,7 @@
             "content": {
               "*/*": {
                 "schema": {
-                  "$ref": "#/components/schemas/getAll"
+                  "$ref": "#/components/schemas/getAll",
                 }
               }
             }
@@ -28,14 +28,81 @@
         }
       },
       "post": {
+        "description": "Create new category",
+        "responses": {
+          "200": {
+            "description": "Created a created category",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/getAll",
+                }
+              }
+            }
+          }  
+        }  
       }
     },
     "/categories/{id}": {
       "get": {
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "integer",
+            },
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Return a list of specified categories",
+          }
+        }
       },
       "put": {
+         "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "integer",
+            },
+          }
+        ],
+        "description": "Update a specific product",
+        "responses": {
+          "200": {
+            "description": "Updated a single product at the specific id",
+          }
+        }
       },
       "delete": {
+         "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "integer",
+            },
+          }
+        ],
+        "description": "Delete a specific product",
+        "responses": {
+          "200": {
+            "description": "Deleted a single product at the specific id",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/getAll"
+                }
+              }
+            }
+          }
+        }
       }
     }
   },
